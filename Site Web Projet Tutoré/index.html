@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hôtel Du Nord</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <!-- HEADER SECTION START  -->
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo">
+        </a>
+
+        <nav class="navbar" id="menu-items">
+            <a href="#acceuil">Acceuil</a>
+            <a href="#hotel">L'Hôtel</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#about">Nous</a>
+            <a href="#contact">Contact</a>
+            <a href="#acces">Accès</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fa-solid fa-bars" id="menu-btn"></div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+
+    <!-- HOME SECTION START -->
+    <main>
+        <section class="home">
+            <div class="content" id="acceuil">
+                <div class="container-home">
+                    <h3>L'HÔTEL DU NORD</h3>
+                    <p>Notre établissement 3 étoiles,<br /> un hôtel-restaurant entièrement
+                        rénové..</p>
+                </div>
+            </div>
+        </section>
+        <!-- HOME SECTION END -->
+
+
+        <!--GALERIE SECTION-->
+        <section class="galerie-section">
+            <div class="about-title" id="hotel">
+                <h2>L'HÔTEL</h2>
+            </div>
+            <div class="slide-container active">
+
+                <div class="slide">
+                    <div class="content">
+                        <h3>L'Hébergement</h3>
+                        <p> Notre hôtel rénové vous propose les équipement suivants:
+                            Climatisation<br />
+                            Salle de bain avec baignoire balnéothérapie ou douche hydrojet<br />
+                            Ecran plat 130 cm<br />
+                            Plateau de courtoisie (thé, café)<br />
+                            84 chambres (simples, doubles, triples, familles)<br />
+                            Chaînes nationales + 4 chaînes Satellites + Canal + téléphone<br />
+                            Wifi gratuit<br />
+                            les services que propose l'hôtel:<br />
+                            Réception 24h/24<br />
+                            Service fax à la réception,<br />
+                            Salon,<br />
+                            Parking privé gratuit<br />
+                            Navette gratuite en direction de l'aéroport sur simple appel de 6H30 à 22H30 au
+                            01 01 01 01 01
+                        </p>
+                        <a href="#" target="_blank" class="btn">Voir plus</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/o3.jpg" alt="chambre3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <h3>Les séminaires</h3>
+                        <p>
+                            Pour vos réunions de travail, un service de location de salle est mis à votre disposition,
+                            où par ailleurs, un service de pauses café, de formules repas...peut vous être
+                            proposé.<br />
+                            Contactez-nous pour connaître les modalités de réservations, les caractéristiques et
+                            disponibilités des salles...<br />
+                            Deux salles de réunion modulables de 80m2, lumière du jour avec cloisons mobiles.
+                            Équipement gratuit :<br />
+                            - Vidéo projecteur,<br />
+                            - paperboard digital,<br />
+                            - écran tactile ,<br />
+                            - WIFI,<br />
+                            - Climatisation.<br />
+                            Pour tout renseignement ou réservation, n'hésitez pas à nous contacter au : 01 01 01 01
+                            01
+                        </p>
+                        <a href="#" class="btn">Voir plus</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/sem2.jpg" alt="seminaire2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <h3>Le Restaurant</h3>
+                        <p> Notre établissement propose tous les 1er de chaque mois, trois nouveaux menus variés et
+                            Équilibrés avec les fruits et légumes de la saison
+                        </p>
+                        <a href="#menus" class="btn">Voir plus</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/resto1.jpg" alt="restaurant1">
+                    </div>
+                </div>
+            </div>
+
+            <div id="prev" onclick="prev()">
+                < </div>
+                    <div id="next" onclick="next()"> > </div>
+
+
+        </section>
+        <!-- GALERIE  SECTION END -->
+
+
+        <!-- RESTO SECTION START -->
+        <section class="cards-resto">
+
+            <div class="about-title" id="menus">
+                <h2>NOS MENUS</h2>
+            </div>
+            <div class="box-cards">
+                <div class="card">
+                    <img class="image" src="images/menu reunion.jpg" alt="menu reunion">
+                    <div class="content">
+
+                        <h3>MENU REUNION 13.62 €</h3>
+                        <p>Entrées :
+                            Tartare de tomate et de chèvre
+                            OU
+                            Velouté de courgette au parmesan
+                            Plats :
+                            Poulet Basquaise<br />
+                            OU
+                            Lieu rôti aux légumes
+                            Desserts et fromages
+                            Plateau de fromages
+                            Desserts :
+                            Moelleux au chocolat<br />
+                            OU
+                            Tarte maison
+                            Café compris, vin en supplément</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="image" src="images/menu invitation.jpg" alt="menu reunion">
+                    <div class="content">
+
+                        <h3>MENU INVITATION 16.76 €</h3>
+                        <p>Entrées :
+                            Lasagnes d'aubergines à la provençale
+                            OU
+                            Carpaccio de saumon
+                            Plats : Magret de canard
+                            OU
+                            Truite en papillote aux olives
+                            Desserts et fromages
+                            Plateau de fromages
+                            Desserts :
+                            Nougat glacé
+                            ou
+                            Crème brûlé à la cassonade.
+                            Café compris, vin en supplément</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="image" src="images/menu prestige.jpg" alt="menu reunion">
+                    <div class="content">
+
+                        <h3>MENU PRESTIGE 18.86 €</h3>
+                        <p>Entrées :
+                            Salade verte et poêlée de Saint-Jacques<br />
+                            OU
+                            Assiette de foie gras
+                            Plats :
+                            Souris d'agneau au romarin OU
+                            Bar au pistou
+                            Desserts et fromages
+                            Plateau de fromages
+                            Desserts :
+                            Profiteroles au chocolat<br />
+                            OU
+                            Soupe de fruits
+                            Café compris, vin en supplément</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="image" src="images/buffet.jpg" alt="menu reunion">
+                    <div class="content">
+
+                        <h3>AUTRES FORMULES PROPOSÉES</h3>
+                        <p>Donnez du goût à vos repas en dégustant
+                            nos
+                            formules et nos buffets à volonté.<br />
+                            • Petit déjeuner buffet<br />
+                            • Buffet de hors d'oeuvres et de desserts<br />
+                            • Plats à la carte
+                            • Banquets, Mariages...<br />
+                            • Repas pour groupes</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- RESTO SECTION END -->
+
+
+        <!--CAVE SECTION START-->
+        <section class="cards-resto">
+
+            <div class="about-title">
+                <h2>LA CAVE</h2>
+            </div>
+            <div class="box-cards">
+                <div class="card">
+                    <img class="image" src="images/vin rouge.jpg" alt="vin rouge">
+                    <div class="content">
+                        <i class="fa-solid fa-wine-glass-empty"></i>
+                        <h3>VIN ROUGES</h3>
+                        <p>
+                            2004 Saumur les Rivières
+                            2003 Côteau du lyonnais le Pot des
+                            Voraces
+                            2004 Bergerac château la Haute Metairie</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="image" src="images/vin blanc.jpg" alt="mvin blanc">
+                    <div class="content">
+                        <i class="fa-solid fa-wine-glass-empty"></i>
+                        <h3>VIN BLANC</h3>
+                        <p>2003 Entre deux mers bordeaux château de Sanse
+                            2005 Muscadet coteaux de la Loire Cour de Rohan ( au verre 12cl ou au Carafon )</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="image" src="images/vin rose.jpg" alt="vin rose">
+                    <div class="content">
+                        <i class="fa-solid fa-wine-glass-empty"></i>
+                        <h3>VIN ROSES</h3>
+                        <p>2004 Costieres de nimes château St Louis la perdrix
+                            2004 Côte de Provence Cesar Mestralou</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--CAVE SECTION END-->
+
+
+        <!--ALCOOLS SECTION START-->
+        <section class="cards-resto">
+
+            <div class="about-title">
+                <h2>LES ALCOOLS</h2>
+            </div>
+            <div class="box-cards">
+                <div class="card">
+                    <img class="image" src="images/whisky.jpg" alt="whisky">
+                    <div class="content">
+                        <i class="fa-solid fa-whiskey-glass"></i>
+                        <h3>LES WHISKY</h3>
+                        <p> Crowley
+                            Glenfiddich
+                            Supplément jus de fruit, soda</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="image" src="images/biere.jpg" alt="biere">
+                    <div class="content">
+                        <i class="fa-solid fa-wine-bottle"></i>
+                        <h3>LES BIERES</h3>
+                        <p>
+                            Pression Leffe blonde
+                            Picon Bière
+                            Hoegaarden Blanche
+                            Leffe blonde
+                            Despérado
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="image" src="images/aperitif.jpg" alt="aperitif">
+                    <div class="content">
+                        <i class="fa-solid fa-whiskey-glass"></i>
+                        <h3>APERITIFS</h3>
+                        <p>Pastis 51, Ricard
+                            Martini rouge, Martini blanc
+                            Campari
+                            Américano maison
+                            Suze, Muscat de Rivesaltes
+                            Rhum, Gin, Vodka, Malibu
+                            Kir au vin blanc
+                            Porto Rouge, Porto blanc
+                            Martini Gin</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="image" src="images/sodas.jpg" alt="sodas">
+                    <div class="content">
+                        <i class="fa-solid fa-glass-water"></i>
+                        <h3>JUS,SODAS,EAUX</h3>
+                        <p>Vittel, Badoit, St Pélégrino
+                            Coca Cola
+                            Coca Cola Light
+                            Limonade, Diabolo
+                            Orangina
+                            Perrier
+                            Schweppes</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ALCOOLS SECTION START-->
+
+        <!--PHOTOS GALLERY-->
+        <div class="about-title" id="galerie">
+            <h2>L'HOTEL EN IMAGE</h2>
+        </div>
+        <section class="sliderGalery"> <!--slider-->
+            
+
+            <div class="slider-items"> 
+                <div class="item active">
+                    <img src="images/o1.jpg" alt="chambre1">
+                </div>
+
+                <div class="item">
+                    <img src="images/o2.jpg" alt="chambre2">
+                </div>
+
+                <div class="item">
+                    <img src="images/o3.jpg" alt="chambre3">
+                </div>
+
+                <div class="item">
+                    <img src="images/o4.jpg" alt="chambre4">
+                </div>
+                
+                <div class="item">
+                    <img src="images/o5.jpg" alt="chambre5">
+                </div>
+
+                <div class="item">
+                    <img src="images/o6.jpg" alt="chambre6">
+                </div>
+
+                <div class="item">
+                    <img src="images/o7.jpg" alt="chambre7">
+                </div>
+                
+                <div class="item">
+                    <img src="images/resto1.jpg" alt="resto1">
+                </div>
+
+                <div class="item">
+                    <img src="images/resto2.jpg" alt="resto2">
+                </div>
+
+                <div class="item">
+                    <img src="images/sem1.jpg" alt="seminaire1">
+                </div>
+                
+                <div class="item">
+                    <img src="images/sem2.jpg" alt="seminaire2">
+                </div>
+
+                <div class="item">
+                    <img src="images/sem3.jpg" alt="selinaire3">
+                </div>
+                
+                <div class="item">
+                    <img src="images/sem4.jpg" alt="seminaire4">
+                </div>
+                
+                <div class="item">
+                    <img src="images/sem5.jpg" alt="seminaire5">
+                </div>
+
+                <div class="item">
+                    <img src="images/sem6.jpg" alt="seminaire6">
+                </div>
+            </div>
+            <button class="prev-btn controls"><i class="fa-solid fa-caret-left"></i></button>
+            <button class="next-btn controls"><i class="fa-solid fa-caret-right"></i></button>
+
+        </section>
+        <!--PHOTOS GALLERY END-->
+
+
+
+        <!-- ABOUT SECTION START -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-title">
+                    <h2>A NOTRE PROPOS</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="images/valeur1.jpg" alt="logo-valeurs">
+                    </div>
+                    <div class="about-text">
+                        <h4>Nos Valeurs</h4>
+                        <div class="asterix">
+                            <i class="fa-solid fa-asterisk"></i>
+                        </div>
+                        <p>
+                            L'hôtel du Nord a mis en place une charte
+                            qualité dans un souci constant d'améliorer ses
+                            services où la satisfaction du client est au coeur
+                            de notre démarche.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- ABOUT SECTION END -->
+
+
+        <!-- VALOR SECTION START -->
+        <section class="about2" id="about">
+            <div class="container">
+                <div class="about2-title">
+                    <h2>L'EQUIPE</h2>
+                </div>
+                <div class="about2-content">
+                    <div class="about2-img">
+                        <img src="images/equipe.jpg" alt="logo-equipe">
+                    </div>
+                    <div class="about2-text">
+                        <h4>Notre Equipe</h4>
+                        <div class="asterix2">
+                            <i class="fa-solid fa-asterisk"></i>
+                        </div>
+                        <p>
+                            Notre personnel est sélectionné et formé pour
+                            répondre au meilleur de notre engagement :
+                            votre entière satisfaction !
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- VALOR SECTION END -->
+
+
+        <!-- CONTACT SECTION START -->
+        <section class="contact" id="contact">
+            <div class="contact">
+                <div class="container">
+                    <div class="page-title">
+                        <h2>INFORMATIONS</h2>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>
+                                09 08 07 06 05
+                                (prix d'un appel local)
+                            </p>
+                        </div>
+                        <div class="localisation-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>
+                                Lieu dit Les Bellevues
+                                AMIENS
+                            </p>
+                        </div>
+                        <div class="mail-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>
+                                reception@hoteldunord.fr
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT SECTION END -->
+
+
+        <!-- CONTACT & LOCALISATION SECTION START -->
+        <section class="localisation-form" id="acces">
+            <h1 class="heading">LOCALISATION & FORME CONTACT</h1>
+            <div class="row">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164298.41992879362!2d1.8783187866210946!3d49.95204830445196!
+                2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e77f680b7b4755%3A0x1a87923b112ea56e!2s%C3%89tang%20de%20Breilly!5e0!3m2!1
+                str!2str!4v1664020745360!5m2!1str!2str" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <form>
+                    <h3>NOUS CONTACTER</h3>
+                    <div class="inputBox">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Nom">
+                    </div>
+
+                    <div class="inputBox">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Mail">
+                    </div>
+
+                    <div class="inputBox">
+                        <i class="fas fa-phone"></i>
+                        <input type="text" placeholder="Téléphone">
+                    </div>
+                    <input type="submit" class="btn" value="Envoyer">
+                </form>
+            </div>
+        </section>
+        <!-- CONTACT & LOCALISATION SECTION END -->
+
+
+        <!-- FOOTER SECTION START -->
+        <footer class="footer">
+            <div class="footer">
+                <div class="footer-text">
+                    <p>Ce site a été créé en guise de projet final concernant une fin de formation et est donc à but
+                        éducatif.
+                        Les images utilisées sont toutes libres de droits. <br />
+                        Créée par Sumeyra D.
+                    </p>
+
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER SECTION END -->
+
+
+    </main>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
